@@ -5,14 +5,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
         <title>Alurapic</title>
-        <link rel="stylesheet" href="arsenal/css/bootstrap.min.css">
-        <link rel="stylesheet" href="arsenal/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="arsenal/css/custom-css.css">
-        <script src="arsenal/js/lib/angular.min.js"></script>
-        <script src="arsenal/js/lib/angular-animate.min.js"></script>
-        <script src="arsenal/js/main.js"></script>
-        <script src="arsenal/js/controllers/champs-controller.js"></script>
-        <script src="arsenal/js/directives/directives.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/custom-css.css">
+        <script src="js/lib/angular.min.js"></script>
+        <script src="js/lib/angular-animate.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/controllers/champs-controller.js"></script>
+        <script src="js/directives/directives.js"></script>
 
     </head>
 
@@ -49,7 +49,7 @@
                 <img src="arsenal/img/Mage_Role.png" ng-click="filterMe('Mage')">
                 <img src="arsenal/img/Marksman_Role.png" ng-click="filterMe('Marksman')">
                 <img src="arsenal/img/Support_Role.png" ng-click="filterMe('Support')">
-                <img src="arsenal/img/Tank_Role.png" ng-click="filterMe('Tank')">
+                <img src="img/Tank_Role.png" ng-click="filterMe('Tank')">
                 <span class="glyphicon glyphicon-refresh big" ng-click="filterMe(' ')"></span>
               </div>
             </form>
@@ -60,7 +60,7 @@
               <div class="media">
                 <div class="media-left media-middle">
                   <a href="#">
-                    <img class="media-object" ng-src="arsenal/https://ddragon.leagueoflegends.com/cdn/6.21.1/img/champion/{{champ.image.full}}" alt="{{champ.name}}">
+                    <img class="media-object" ng-src="https://ddragon.leagueoflegends.com/cdn/6.21.1/img/champion/{{champ.image.full}}" alt="{{champ.name}}">
                   </a>
                 </div>
                 <div class="media-body">
