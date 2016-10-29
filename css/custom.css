@@ -1,5 +1,7 @@
 /* Custom css for index page */
 
+body { padding-top: 70px; }
+
 .bg-primary {
     background-color: #201f43;
 }
