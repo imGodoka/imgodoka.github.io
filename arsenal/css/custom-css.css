@@ -1,0 +1,82 @@
+/*custom css*/
+body { padding-top: 70px; }
+
+.jumbotron {
+    position: relative;
+    background: #000 url("/img/jumbotron-bg.jpg") center center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.jumbotron {
+  color: #fff;
+}
+
+.line-fix {
+  line-height: 1.5em;
+}
+
+h3.line-fix {
+  font-size: 1.4em;
+}
+
+.navbar {
+  padding: 15px;
+}
+
+.painel-animado {
+   -moz-transition:transform 0.8s;
+   -webkit-transition:transform 0.8s;
+   -ms-transition:transform 0.8s;
+   -o-transition:transform 0.8s;
+   transition:transform 0.8s;
+}
+
+.painel-animado.ng-leave-active {
+ -moz-transform: scale(0.1);
+ -webkit-transform: scale(0.1);
+ -ms-transform: scale(0.1);
+ -o-transform: scale(0.1);
+ transform: scale(0.1);
+}
+
+.separator {height: 25px;}
+
+
+/*Barrinhas*/
+
+.infobar {
+  max-width: 100px;
+  height: 25px;
+  margin-bottom: 15px;
+  display: block;
+}
+.block {
+  display: block;
+}
+.big {
+  font-size: 20px;
+}
+
+.infobar.base {
+  background: url('/img/barback.png') left top;
+  z-index: 99999;
+}
+
+.infobar.green {
+  background: url('/img/barfillgreen.png') left top;
+}
+
+.infobar.red {
+  background: url('/img/barfillred.png') left top;
+}
+
+.infobar.blue {
+  background: url('/img/barfillblue.png') left top;
+}
+
+.infobar.purple {
+  background: url('/img/barfillpurple.png') left top;
+}
