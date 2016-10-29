@@ -1,8 +1,6 @@
 /*custom css*/
 body { padding-top: 50px; }
 
-.navbar { padding: 0px }
-
 .jumbotron {
     position: relative;
     background: #000 url("../img/jumbotron-bg.jpg") center center;
@@ -22,10 +20,6 @@ body { padding-top: 50px; }
 
 h3.line-fix {
   font-size: 1.4em;
-}
-
-.navbar {
-  padding: 15px;
 }
 
 .painel-animado {
