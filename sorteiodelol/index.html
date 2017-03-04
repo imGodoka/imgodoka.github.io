@@ -1,16 +1,17 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <base href="/">
+    <base href="D:/GitHub/imgodoka.github.io/">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Portfolio lindo e bonito do imGodoka.">
     <meta name="author" content="Victor Martins">
 
-    <meta property="og:locale" content="pt_BR"
-    <meta property="og:url" content="https://imgodoka.github.io/">
+    <meta property="og:locale" content="pt_BR" <meta property="og:url" content="https://imgodoka.github.io/">
     <meta property="og:title" content="imGodoka GitHub">
     <meta property="og:site_name" content="imGodoka">
 
@@ -24,17 +25,41 @@
 
 
     <title>imGodoka - Sorteio de LoL</title>
+    <style>
+        .container {
+            margin-bottom: 0px !important;
+            margin-top: 0px !important;
+            padding-bottom: 0px !important;
+            padding-top: 0px !important;
+            min-height: 100vh;
+        }
+        .image {
+          width: 120px;
+          height: 120px;
+        }
+.colorbox {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  opacity: 0.8;
+  border-color: black;
+  box-shadow: 2px 2px 1px;
+  cursor: pointer;
+}
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
+.colortool{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
 
-    <!-- Custom CSS -->
-    <link href="css/stylish-portfolio.css" rel="stylesheet">
-
+    </style>
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -45,11 +70,33 @@
 
 </head>
 
-<body>
+<body class="cyan lighten-2" id="body">
 
+    <div class="row left-align colortool">
+      <div class="col colorbox teal" onclick="ChangeColor('teal')"></div>
+      <div class="col colorbox purple" onclick="ChangeColor('purple')"></div>
+      <div class="col colorbox red" onclick="ChangeColor('red')"></div>
+      <div class="col colorbox pink" onclick="ChangeColor('pink')"></div>
+      <div class="col colorbox cyan" onclick="ChangeColor('cyan')"></div>
+      <div class="col colorbox green" onclick="ChangeColor('green')"></div>
+    </div>
 
-      <!-- jQuery -->
-      <script src="js/jquery.js"></script>
+    <div class="container valign-wrapper row">
+        <div class="valign center-align col s12">
+            <a id="but" class="waves-effect waves-light btn-large cyan darken-4" onclick="GetTheChamp()">Sorteie-me!</a><br /><br />
+            <img class="image" id="splash" src="/" />
+            <h2 id="name">-----</h2>
+            <h5 id="nextname">-----</h5>
+            <h5 id="lastname">-----</h5>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="js/getapi.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
 
 </body>
 
