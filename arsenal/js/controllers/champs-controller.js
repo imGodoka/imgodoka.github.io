@@ -2,7 +2,7 @@
 
 angular.module('arsenalapp').controller('ChampsController', function($scope, $http) {
 
-  var api = 'http://ddragon.leagueoflegends.com/cdn/8.9.1/data/pt_BR/champion.json';
+  var api = 'https://ddragon.leagueoflegends.com/cdn/8.9.1/data/pt_BR/champion.json';
 
     $scope.champs = [];
     $scope.champsTag = [];
