@@ -40,6 +40,9 @@ h3.line-fix {
 
 .separator {height: 25px;}
 
+[ng-click] {
+  cursor: pointer;
+}
 
 /*Barrinhas*/
 

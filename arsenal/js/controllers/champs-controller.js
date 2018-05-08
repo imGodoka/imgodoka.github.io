@@ -2,7 +2,7 @@
 
 angular.module('arsenalapp').controller('ChampsController', function($scope, $http) {
 
-    var api = 'https://global.api.pvp.net/api/lol/static-data/br/v1.2/champion?champData=image,info,tags&api_key=5d4fb5f7-a5dc-42d5-8b68-bc37a716bb6d';
+  var api = 'http://ddragon.leagueoflegends.com/cdn/8.9.1/data/pt_BR/champion.json';
 
     $scope.champs = [];
     $scope.champsTag = [];
